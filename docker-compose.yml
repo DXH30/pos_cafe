@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  myapp:
+    tty: true
+    image: docker.io/bitnami/laravel:5.8.35
+    environment:
+      - DB_HOST=mariadb
+      - DB_USERNAME=my_user
+      - DB_DATABASE=my_database
+      - DB_PASSWORD=my_password
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+    # privileged: true # Privileged mode could be required to run this container under Windows
