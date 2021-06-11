@@ -31,5 +31,6 @@ Route::middleware('auth')->group(function() {
         Route::post('track_order', ['uses' => 'InventoryController@postOrder', 'as' => 'post-order']);
         Route::get('requests', ['uses' => 'InventoryController@requests', 'as' => 'requests']);
         Route::get('order/d/{id}', ['uses' => 'InventoryController@order_done', 'as' => 'order-done']);
+        Route::get('order/p/{id}', ['uses' => 'InventoryController@order_print', 'as' => 'order-print']);
     });
 });

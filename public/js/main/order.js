@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#tabel_order').DataTable({responsive: true});
+    $('#tabel_order').DataTable();
     $('#orderan').keypress(function(e) {
         var key = e.which;
         if (key == 32) {

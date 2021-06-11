@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Tuwa Kawa</h1>
-                    <p>Coffee & Roastery Nusa Tenggara Barat</p>
+                    <p>Coffee & Roastery Nusa Tenggara Beans Bagus</p>
                 </div>
                 <div class="carousel-image wow zoomIn">
                     <img src="img/landing/logo.png" alt="logo" width="300px"/>

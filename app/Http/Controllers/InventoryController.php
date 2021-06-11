@@ -100,7 +100,13 @@ class InventoryController extends Controller
         $order = Order::find($id);
         $order->done = 1;
         $order->save();
-        return redirect()->back();
+        // Print struk
+        return redirect()->to(route('order-print', ['id' => $id]));
+    }
+
+    public function order_print(Request $request, $id) {
+        $data_in['orders'] = Order::with(['order_unit'])->find($id);
+        return view('print_struk', $data_in);
     }
 
     public function requests(Request $request) {

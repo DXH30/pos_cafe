@@ -1,4 +1,8 @@
-$('#tabel_stok').DataTable({responsive: true});
+$(document).ready(function() {
+    $('#tabel_stok').DataTable({
+        responsive: true
+    });
+});
 
 function hapus(produk_id) {
     $.ajax({
